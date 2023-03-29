@@ -16,4 +16,4 @@ jobs:
         uses: docker/build-push-action@v4.0.0
         with:
           push: true
-          tags: undersss/getting-started:latest
+          tags: underss/getting-started:latest
