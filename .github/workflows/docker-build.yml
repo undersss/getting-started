@@ -7,5 +7,8 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v2.7.0
-      - name: Verify
-        run: ls
+      - name: Docker Login
+        uses: docker/login-actions@2.1.0
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
